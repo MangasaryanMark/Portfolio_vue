@@ -7,6 +7,9 @@ module.exports = {
     colors: {
       ...colors,
       'custom': '#6566e2',
+      'xaki-kanach': '#404d3c',
+      'header-color': '#f7e5d2',
+      'footer-of-footer': '#fbf2e8'
     },
     fontFamily: {
       sans: ['Graphic', 'sans-serif'],
