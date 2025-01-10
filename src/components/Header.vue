@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-header-color fixed top-0 w-full h-[100px] text-center items-center z-50">
+  <header :class="{'bg-header-color sticky top-0 w-full h-[100px] text-center items-center z-50 transition-all': true,'transform -translate-y-full': isScrollingDown,'translate-y-0': !isScrollingDown}">
     <div class="relative flex justify-between items-center px-6 py-4">
 
       <div class="w-1/3 cursor-pointer">
@@ -10,10 +10,7 @@
 
       <div class="w-2/3 flex justify-end items-center text-center p-4">
 
-        <button
-            class="text-white lg:hidden focus:outline-none focus:ring-2 focus:ring-white"
-            @click="toggleMenu"
-        >
+        <button class="text-white lg:hidden focus:outline-none focus:ring-2 focus:ring-white" @click="toggleMenu">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"
                stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7"/>
@@ -53,10 +50,12 @@
 </template>
 
 <script setup>
-import {ref} from 'vue';
-import {useRouter} from 'vue-router';
+import { ref, onMounted, onBeforeUnmount } from 'vue';
+import { useRouter } from 'vue-router';
 
 const menuOpen = ref(false);
+const lastScrollTop = ref(0);
+const isScrollingDown = ref(false);
 
 const toggleMenu = () => {
   menuOpen.value = !menuOpen.value;
@@ -64,11 +63,40 @@ const toggleMenu = () => {
 
 const router = useRouter();
 const goToLogin = () => {
-  router.push({name: 'home'});
+  router.push({ name: 'home' });
 };
+
+const handleScroll = () => {
+  const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (currentScroll < 100) {
+    return;
+  }
+
+  if (currentScroll > lastScrollTop.value) {
+    isScrollingDown.value = true;
+  } else {
+    isScrollingDown.value = false;
+  }
+
+  lastScrollTop.value = currentScroll <= 0 ? 0 : currentScroll;
+};
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll);
+});
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll);
+});
 </script>
 
 <style scoped>
+/* Плавное скрытие навбара */
+.transition-all {
+  transition: transform 0.3s ease-in-out;
+}
+
 @media (min-width: 1024px) {
   .dropdown-menu {
     display: none;

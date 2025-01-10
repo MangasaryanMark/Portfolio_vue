@@ -1,5 +1,5 @@
 <template>
-  <footer class="w-full mt-[100px]">
+  <footer class="w-full">
     <div class="w-full bg-xaki-kanach">
       <div class="flex flex-wrap p-12 justify-between">
         <div class="w-full md:w-1/3 p-12 md:p-6">

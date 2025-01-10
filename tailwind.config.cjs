@@ -9,7 +9,8 @@ module.exports = {
       'custom': '#6566e2',
       'xaki-kanach': '#404d3c',
       'header-color': '#f7e5d2',
-      'footer-of-footer': '#fbf2e8'
+      'footer-of-footer': '#fbf2e8',
+      'button-hover': '#60695d'
     },
     fontFamily: {
       sans: ['Graphic', 'sans-serif'],
