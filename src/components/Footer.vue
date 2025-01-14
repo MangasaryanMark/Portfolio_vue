@@ -4,21 +4,21 @@
       <div class="flex flex-wrap p-12 justify-between">
         <div class="w-full md:w-1/3 p-12 md:p-6">
           <div class="text-start">
-            <p class="text-white text-3xl">Newsletter</p>
+            <p class="text-white text-3xl md:text-xl lg:text-3xl">Newsletter</p>
           </div>
           <div class="text-start pt-6 md:pt-12">
-            <p class="text-white text-sm">Stay up to date with all the latest from 47th Cafe</p>
+            <p class="text-white sm:text-sm md:text-xs lg:text-sm">Stay up to date with all the latest from 47th Cafe</p>
           </div>
           <div class="pt-6">
-            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Email *</label>
+            <label class="block mb-2 sm:text-sm md:text-xs lg:text-sm font-medium text-gray-900 dark:text-white">Email *</label>
             <input type="text"
-                   class="bg-transparent border border-white text-gray-900 text-sm w-full p-2.5 hover:bg-gray-100 hover:bg-opacity-20 transition-all duration-300"
+                   class="bg-transparent border border-white text-gray-900 sm:text-sm md:text-xs lg:text-sm w-full p-2.5 hover:bg-gray-100 hover:bg-opacity-20 transition-all duration-300"
                    required />
           </div>
           <div class="w-full flex flex-wrap items-center">
             <div class="w-full md:w-2/3 flex py-4 md:py-6 items-center">
               <input id="subscribe" type="checkbox" class="appearance-none cursor-pointer w-4 h-4 border border-white">
-              <label for="subscribe" class="ms-2 text-sm md:text-sm cursor-pointer text-white text-nowrap">Yes, subscribe me to your newsletter</label>
+              <label for="subscribe" class="ms-2 sm:text-sm md:text-xs lg:text-sm md:text-sm cursor-pointer text-white text-nowrap">Yes, subscribe me to your newsletter</label>
             </div>
             <div class="w-full md:w-1/3 mt-4 flex justify-end md:mt-0">
               <button class="w-full md:w-auto bg-transparent text-white py-3 px-10 border border-white hover:bg-gray-100 hover:bg-opacity-20 transition-all duration-300">Join</button>
@@ -27,27 +27,27 @@
         </div>
 
         <div class="w-full md:w-1/3 p-12 md:p-6">
-          <div class="flex items-start text-white text-start text-3xl">
+          <div class="flex items-start text-white text-start text-3xl md:text-xl lg:text-3xl">
             <p>Talk to Us</p>
           </div>
           <div class="mt-6 md:mt-12 text-gray-100 text-start">
-            <p class="text-sm md:text-base">123-456-7890</p>
-            <p class="text-sm md:text-base cursor-pointer">info@mysite.com</p>
+            <p class="sm:text-lg md:text-base lg:text-lg">123-456-7890</p>
+            <p class="sm:text-lg md:text-base lg:text-lg cursor-pointer">info@mysite.com</p>
           </div>
           <div class="mt-6 md:mt-12 text-gray-100 text-start">
-            <p class="text-sm md:text-base">500 Terry Francine St.</p>
-            <p class="text-sm md:text-base">San Francisco, CA 94158</p>
+            <p class="sm:text-lg md:text-base lg:text-lg">500 Terry Francine St.</p>
+            <p class="sm:text-lg md:text-base lg:text-lg">San Francisco, CA 94158</p>
           </div>
         </div>
 
         <div class="w-full md:w-1/3 p-12 md:p-6">
-          <div class="text-4xl md:text-6xl text-white text-start">
+          <div class="text-6xl md:text-4xl lg:text-6xl text-white text-start">
             <a href="https://www.instagram.com/wix/">Instagram</a>
           </div>
-          <div class="text-4xl md:text-6xl mt-6 md:mt-12 text-white text-start">
+          <div class="text-6xl md:text-4xl lg:text-6xl mt-6 md:mt-12 text-white text-start">
             <a href="https://www.facebook.com/wix">Facebook</a>
           </div>
-          <div class="text-4xl md:text-6xl mt-6 md:mt-12 text-white text-start">
+          <div class="text-6xl md:text-4xl lg:text-6xl mt-6 md:mt-12 text-white text-start">
             <a href="https://www.twitter.com/wix">Twitter</a>
           </div>
         </div>

@@ -1,6 +1,6 @@
 <template>
-  <h2 class="text-center text-black text-2xl">{{ title }}</h2>
-  <ul class="text-center text-gray-800 mt-6">
+  <h2 class="text-black sm:text-xl md:text-xl lg:text-2xl">{{ title }}</h2>
+  <ul class="text-gray-800 mt-4">
     <li v-for="(data, index) in datas" :key="index">{{ data }}</li>
   </ul>
 </template>

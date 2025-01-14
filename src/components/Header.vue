@@ -1,11 +1,11 @@
 <template>
-  <header :class="{'bg-header-color sticky top-0 w-full h-[100px] text-center items-center z-50 transition-all': true,'transform -translate-y-full': isScrollingDown,'translate-y-0': !isScrollingDown}">
+  <header :class="{'bg-header-color sticky top-0 w-full md:w-full h-[100px] text-center items-center z-50 transition-all': true,'transform -translate-y-full': isScrollingDown,'translate-y-0': !isScrollingDown}">
     <div class="relative flex justify-between items-center px-6 py-4">
 
       <div class="w-1/3 cursor-pointer">
-        <p class="absolute left-7 top-[20px] text-5xl">47</p>
-        <p class="absolute left-[83px] top-[15px] text-xl">th</p>
-        <p class="absolute left-[75px] top-[30px] text-5xl text-zinc-600">cafe</p>
+        <p class="absolute left-9 md:left-7 top-[20px] text-3xl md:text-5xl">47</p>
+        <p class="absolute left-[74px] md:left-[83px] top-[15px] text-base md:text-xl">th</p>
+        <p class="absolute left-[65px] md:left-[75px] top-[27px] md:top-[30px] text-3xl md:text-5xl text-zinc-600">cafe</p>
       </div>
 
       <div class="w-2/3 flex justify-end items-center text-center p-4">
@@ -17,12 +17,12 @@
           </svg>
         </button>
 
-        <div v-if="menuOpen" class="absolute top-[100px] right-0 w-[80%] bg-header-color text-white p-4 lg:hidden">
+        <div v-if="menuOpen" class="absolute top-[100px] right-0 w-full bg-header-color text-white p-4 lg:hidden">
           <router-link to="/" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Home</router-link>
-          <router-link to="/" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">This is Us</router-link>
-          <router-link to="/" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Menu</router-link>
+          <router-link to="thisIsUs" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">This is Us</router-link>
+          <router-link to="menu" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Menu</router-link>
           <router-link to="/" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Order Online</router-link>
-          <router-link to="/" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Contact Us</router-link>
+          <router-link to="contact" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Contact Us</router-link>
 
           <button class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Log In</button>
           <button class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Cart (0)</button>
@@ -30,10 +30,10 @@
 
         <nav class="hidden lg:flex items-center gap-6">
           <router-link to="/" class="text-base font-light hover:text-zinc-600">Home</router-link>
-          <router-link to="/" class="text-base font-light hover:text-zinc-600">This is Us</router-link>
-          <router-link to="/" class="text-base font-light hover:text-zinc-600">Menu</router-link>
+          <router-link to="thisIsUs" class="text-base font-light hover:text-zinc-600">This is Us</router-link>
+          <router-link to="menu" class="text-base font-light hover:text-zinc-600">Menu</router-link>
           <router-link to="/" class="text-base font-light hover:text-zinc-600">Order Online</router-link>
-          <router-link to="/" class="text-base font-light hover:text-zinc-600">Contact Us</router-link>
+          <router-link to="contact" class="text-base font-light hover:text-zinc-600">Contact Us</router-link>
 
           <div>
             <svg xmlns="http://www.w3.org/2000/svg" class="w-[40px] h-[40px]" viewBox="0 0 50 50">
