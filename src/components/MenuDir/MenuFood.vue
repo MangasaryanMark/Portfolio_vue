@@ -8,7 +8,7 @@
         <div class="w-full h-8 text-2xl text-start align-middle">
           <p>Bakery</p>
         </div>
-        <div class="w-full flex flex-row justify-between mt-2">
+        <div class="w-full flex flex-col md:flex-row lg:flex-row justify-between mt-2">
           <Menu title="Croissant (Plain/Chocolate)" description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text." price="6.00"/>
           <Menu title="Daily Muffin" description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text." price="6.00"/>
           <Menu title="Cheesecake" description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text." price="6.00"/>
@@ -20,7 +20,7 @@
         <div class="w-full h-8 text-2xl text-start align-middle">
           <p>All-Day Breakfast</p>
         </div>
-        <div class="w-full flex flex-row justify-between mt-2">
+        <div class="w-full flex flex-col md:flex-row lg:flex-row justify-between mt-2">
           <Menu title="Granola & Greek Yogurt"
                 description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
                 price="12.00"/>
@@ -31,7 +31,7 @@
                 description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
                 price="12.00"/>
         </div>
-        <div class="w-full flex flex-row justify-between mt-2">
+        <div class="w-full flex flex-col md:flex-row lg:flex-row justify-between mt-2">
           <Menu title="Avocado Toast"
                 description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
                 price="12.00"/>
@@ -42,7 +42,7 @@
                 description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
                 price="12.00"/>
         </div>
-        <div class="w-full flex flex-row justify-between mt-2">
+        <div class="w-full flex flex-col md:flex-row lg:flex-row justify-between mt-2">
           <Menu title="Spinach & Salmon Brioche"
                 description="I’m a dish description. Click “Edit Menu” to open the Restaurant Menu editor and change my text."
                 price="12.00"/>
@@ -59,7 +59,7 @@
 
 <script setup>
 
-import Menu from "@/components/Menu.vue";
+import Menu from "@/components/MenuDir/Menu.vue";
 
 </script>
 

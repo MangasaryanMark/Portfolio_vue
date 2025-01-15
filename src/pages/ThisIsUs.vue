@@ -6,7 +6,7 @@
       <div class="w-full md:w-1/2 lg:w-1/2">
         <ImageBlock href="https://static.wixstatic.com/media/c837a6_45216043ba6541838c690ad89cdeb432~mv2.jpg/v1/fill/w_948,h_813,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_45216043ba6541838c690ad89cdeb432~mv2.jpg"/>
       </div>
-      <div class="w-full md:w-1/2 lg:w-1/2 h-full p-16 md:p-24 lg:p-36 flex flex-col justify-center">
+      <div @click="router.push({name: 'menu'})" class="w-full md:w-1/2 lg:w-1/2 h-full p-16 md:p-24 lg:p-36 flex flex-col justify-center">
         <TextBlock title="The Best Bite in the Neighborhood" button-text="View Menu" description="I'm an extra long title. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you." subtitle=""/>
       </div>
     </div>
@@ -26,8 +26,8 @@
   </section>
   <section class="w-full h-auto">
     <div class="w-full h-1/3 flex flex-col md:flex-row lg:flex-row">
-      <div class="w-full md:w-1/2 lg:w-1/2 h-full p-16 md:p-24 lg:p-36 flex flex-col justify-center">
-        <TextBlock title="From Our Hearts to Your Plate" button-text="Visit Us" description="I'm an extra long title. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you." subtitle=""/>
+      <div  class="w-full md:w-1/2 lg:w-1/2 h-full p-16 md:p-24 lg:p-36 flex flex-col justify-center">
+        <TextBlock @click="router.push({name: 'contact'})" title="From Our Hearts to Your Plate" button-text="Visit Us" description="I'm an extra long title. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you." subtitle=""/>
       </div>
       <div class="w-full md:w-1/2 lg:w-1/2">
         <ImageBlock href="https://static.wixstatic.com/media/c837a6_2274a6485ced4ff4b8953b86ffdffee7~mv2.jpg/v1/fill/w_951,h_825,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/c837a6_2274a6485ced4ff4b8953b86ffdffee7~mv2.jpg"/>
@@ -38,12 +38,23 @@
 </template>
 
 <script setup>
+import {onMounted} from "vue";
+const router = useRouter()
 
+import {useRouter} from "vue-router";
 import Header from "@/components/Header.vue";
 import UsInfo from "@/components/ThisIsUsInfoDir/Info.vue";
 import Footer from "@/components/Footer.vue";
 import ImageBlock from "@/components/imageText/ImageBlock.vue";
 import TextBlock from "@/components/imageText/TextBlock.vue";
+
+
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 </script>
 
 <style scoped>

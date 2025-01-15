@@ -17,11 +17,11 @@
           >
             Order Online
           </button>
-          <button
+          <router-link to="menu"
               class="w-full md:w-auto bg-transparent text-sm md:text-sm text-white py-3 px-8 md:px-10 border border-white hover:bg-button-hover transition-all duration-300 whitespace-nowrap inline-flex items-center justify-center"
           >
             Our Menu
-          </button>
+          </router-link>
         </div>
       </div>
     </div>

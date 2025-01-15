@@ -21,7 +21,7 @@
           <router-link to="/" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Home</router-link>
           <router-link to="thisIsUs" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">This is Us</router-link>
           <router-link to="menu" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Menu</router-link>
-          <router-link to="/" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Order Online</router-link>
+          <router-link to="orders" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Order Online</router-link>
           <router-link to="contact" class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Contact Us</router-link>
 
           <button class="block px-6 py-2 text-sm sm:text-base cursor-pointer font-light text-zinc-600">Log In</button>
@@ -32,7 +32,7 @@
           <router-link to="/" class="text-base font-light hover:text-zinc-600">Home</router-link>
           <router-link to="thisIsUs" class="text-base font-light hover:text-zinc-600">This is Us</router-link>
           <router-link to="menu" class="text-base font-light hover:text-zinc-600">Menu</router-link>
-          <router-link to="/" class="text-base font-light hover:text-zinc-600">Order Online</router-link>
+          <router-link to="orders" class="text-base font-light hover:text-zinc-600">Order Online</router-link>
           <router-link to="contact" class="text-base font-light hover:text-zinc-600">Contact Us</router-link>
 
           <div>

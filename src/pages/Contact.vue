@@ -5,7 +5,7 @@
       <p>Let's Connect</p>
     </div>
     <div
-        class="w-full lg:w-2/3 mx-auto flex sm:flex-col md:flex-row md:items-baseline lg:flex-row items-center justify-center sm:space-y-5 lg:space-y-0 lg:space-x-5">
+        class="w-full lg:w-2/3 mx-auto flex sm:flex-col md:flex-row md:items-baseline lg:flex-row text-center items-center justify-center sm:space-y-5 lg:space-y-0 lg:space-x-5">
       <div class="flex flex-col sm:text-xl md:text-base lg:text-xl items-center p-0 md:p-6 lg:p-6">
         <UsInfoBlock
             title=""
@@ -17,15 +17,15 @@
       </div>
     </div>
   </section>
-  <section class="w-full min-h-96 flex justify-center flex-row pt-12 pb-24">
-    <div class="w-5/6 flex flex-row">
-      <div class="w-1/2 p-4">
-        <div class="w-full h-full pt-24 pb-24 ps-12 pe-24">
-          <div class="w-full mb-8 flex flex-row">
-            <div class="w-1/2 me-4">
+  <section class="w-full min-h-96 flex justify-center flex-col md:flex-row lg:flex-row pt-12">
+    <div class="w-5/6 flex flex-col md:flex-row lg:flex-row">
+      <div class="w-full md:w-1/2 lg:w-1/2 p-4">
+        <div class="w-full h-full pt-24 pb-24 ps-12 md:ps-0 lg:ps-12 pe-0 md:pe-0 lg:pe-24">
+          <div class="w-full mb-8 flex flex-col md:flex-row lg:flex-row">
+            <div class="w-full md:w-1/2 lg:w-1/2 mb-8 md:mb-0 lg:mb-0 me-4">
               <InfoInput title="First Name *" type="text"/>
             </div>
-            <div class="w-1/2">
+            <div class="w-full md:w-1/2 lg:w-1/2">
               <InfoInput title="Last Name *" type="text"/>
             </div>
           </div>
@@ -46,10 +46,10 @@
           </div>
         </div>
       </div>
-      <div class="w-1/2 p-4 flex items-center">
-        <div class="w-full h-2/3 pb-28 ps-28 pe-12 border-s border-black">
-          <div class="w-full mb-16 flex flex-row">
-            <div class="w-1/2 me-12">
+      <div class="w-full md:w-1/2 lg:w-1/2 p-4 flex items-center">
+        <div class="w-full h-2/3 pb-28 md:ps-12 ps-12 lg:ps-28 pe-0 md:pe-4 lg:pe-12 border-s-0 md:border-s lg:border-s border-black">
+          <div class="w-full mb-8 md:mb-12 lg:mb-16 flex flex-col md:flex-row lg:flex-row">
+            <div class="w-full md:w-1/2 lg:w-1/2 me-12 pb-8 md:pb-0 lg:pb-0">
               <svg preserveAspectRatio="xMidYMid meet" data-bbox="53.5 36.5 93 127" viewBox="53.5 36.5 93 127"
                    height="29" width="21" color="black" xmlns="http://www.w3.org/2000/svg" data-type="color"
                    role="presentation" aria-hidden="true" aria-label="">
@@ -65,7 +65,7 @@
               </div>
               <div
                   class="w-full lg:w-full mx-auto flex sm:flex-col md:flex-row md:items-baseline lg:flex-row items-center">
-                <div class="flex flex-col sm:text-base md:text-sm lg:text-base">
+                <div class="flex flex-col text-base md:text-sm lg:text-base">
                   <UsInfoBlock
                       :datas="[
                       '500 Terry Francine St.',
@@ -75,7 +75,7 @@
                 </div>
               </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-full md:w-1/2 lg:w-1/2 pb-4 md:pb-0 lg:pb-0">
               <svg preserveAspectRatio="xMidYMid meet" data-bbox="38.999 39 122.001 122" viewBox="38.999 39 122.001 122"
                    height="23" width="23" xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true"
                    aria-label="">
@@ -87,7 +87,7 @@
                 <p>Phone</p>
               </div>
               <div
-                  class="w-full lg:w-full mx-auto flex sm:flex-col md:flex-row md:items-baseline lg:flex-row items-center">
+                  class="w-full lg:w-full mx-auto flex sm:flex-col md:flex-row md:items-baseline lg:flex-row">
                 <div class="flex flex-col sm:text-base md:text-sm lg:text-base">
                   <UsInfoBlock
                       :datas="[
@@ -98,8 +98,8 @@
               </div>
             </div>
           </div>
-          <div class="w-full flex flex-row">
-            <div class="w-1/2 me-12">
+          <div class="w-full flex flex-col md:flex-row lg:flex-row">
+            <div class="w-full me-12 md:w-1/2 lg:w-1/2 pb-8 md:pb-0 lg:pb-0">
               <svg preserveAspectRatio="xMidYMid meet" viewBox="35 56 130 88" height="16" width="23"
                    xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true" aria-label="">
                 <path
@@ -109,8 +109,7 @@
               <div class="text-xl mt-8 text-black text-start">
                 <p>Email</p>
               </div>
-              <div
-                  class="w-full lg:w-full mx-auto flex sm:flex-col md:flex-row md:items-baseline lg:flex-row items-center">
+              <div class="w-full lg:w-full mx-auto mt-1 flex sm:flex-col md:flex-row md:items-baseline lg:flex-row ">
                 <div class="flex flex-col cursor-pointer sm:text-base md:text-sm lg:text-base">
                   <UsInfoBlock
                       :datas="[
@@ -120,7 +119,7 @@
                 </div>
               </div>
             </div>
-            <div class="w-1/2">
+            <div class="w-full md:w-1/2 lg:w-1/2 pb-4 md:pb-0 lg:pb-0">
               <svg class="ms-1" preserveAspectRatio="xMidYMid meet" viewBox="42 39.499 116 121" height="24" width="23"
                    xmlns="http://www.w3.org/2000/svg" role="presentation" aria-hidden="true">
                 <path
@@ -131,7 +130,7 @@
                 <p>Follow</p>
               </div>
               <div
-                  class="w-full lg:w-full mx-auto flex sm:flex-col md:flex-row md:items-baseline lg:flex-row items-center mt-5">
+                  class="w-full lg:w-full mx-auto flex flex-row md:items-baseline items-center mt-5">
                 <div class="w-6 h-6 me-2">
                   <a href="https://www.facebook.com/wix">
                     <ImageBlock width="25"
@@ -161,6 +160,10 @@
       </div>
     </div>
   </section>
+  <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.419976389337!2d44.49902878454366!3d40.22196349791306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406a970002cae971%3A0x7c3be6443d627fcc!2sCODEIDEA%20LLC!5e0!3m2!1sru!2sam!4v1734960023074!5m2!1sru!2sam"
+      class="w-full h-96 mt-12" style="border:0; pointer-events: none;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
   <Footer/>
 </template>
 
@@ -170,6 +173,21 @@ import UsInfoBlock from "@/components/ThisIsUsInfoDir/UsInfoBlock.vue";
 import Footer from "@/components/Footer.vue";
 import InfoInput from "@/components/ContactInfoDir/InfoInput.vue";
 import ImageBlock from "@/components/imageText/ImageBlock.vue";
+import {onMounted, onBeforeMount} from "vue";
+
+onBeforeMount(() => {
+  window.scrollTo({
+    top: 1800,
+    behavior: "auto",
+  });
+});
+
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 </script>
 
 <style scoped>

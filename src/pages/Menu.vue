@@ -6,7 +6,7 @@
     </div>
     <div
         class="w-full lg:w-2/3 mx-auto flex sm:flex-col md:flex-row md:items-baseline lg:flex-row items-center justify-center sm:space-y-5 lg:space-y-0 lg:space-x-5">
-      <div class="flex flex-col sm:text-xl md:text-base lg:text-xl items-center p-0 md:p-6 lg:p-6">
+      <div class="flex flex-col sm:text-xl md:text-base lg:text-xl text-center items-center p-0 md:p-6 lg:p-6">
         <UsInfoBlock
             :datas="[
             'I`m a paragraph. Click here to add your own text and edit me.',
@@ -46,16 +46,23 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import {onMounted, ref} from "vue";
 
 
 import Header from "@/components/Header.vue";
 import UsInfoBlock from "@/components/ThisIsUsInfoDir/UsInfoBlock.vue";
 import Footer from "@/components/Footer.vue";
-import MenuFood from "@/components/MenuFood.vue";
-import MenuDrinks from "@/components/MenuDrinks.vue";
+import MenuFood from "@/components/MenuDir/MenuFood.vue";
+import MenuDrinks from "@/components/MenuDir/MenuDrinks.vue";
 
 const changingMenu = ref(MenuFood);
+
+onMounted(() => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
 </script>
 
 <style scoped>
