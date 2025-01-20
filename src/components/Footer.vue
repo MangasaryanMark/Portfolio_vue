@@ -15,13 +15,23 @@
                    class="bg-transparent border border-white text-gray-900 sm:text-sm md:text-xs lg:text-sm w-full p-2.5 hover:bg-gray-100 hover:bg-opacity-20 transition-all duration-300"
                    required />
           </div>
-          <div class="w-full flex flex-wrap items-center">
-            <div class="w-full md:w-2/3 flex py-4 md:py-6 items-center">
-              <input id="subscribe" type="checkbox" class="appearance-none cursor-pointer w-4 h-4 border border-white">
-              <label for="subscribe" class="ms-2 sm:text-sm md:text-xs lg:text-sm md:text-sm cursor-pointer text-white text-nowrap">Yes, subscribe me to your newsletter</label>
+          <div class="w-full flex flex-wrap items-center gap-4">
+            <div class="flex-1 flex flex-row py-4 md:py-6 items-center">
+              <input
+                  id="subscribe"
+                  type="checkbox"
+                  class="appearance-none cursor-pointer w-4 md:w-4 lg:w-4 border border-white aspect-square bg-transparent checked:bg-white checked:border-transparent">
+              <label
+                  for="subscribe"
+                  class="ms-2 text-sm md:text-xs lg:text-sm cursor-pointer text-white leading-tight">
+                Yes, subscribe me to your newsletter
+              </label>
             </div>
-            <div class="w-full md:w-1/3 mt-4 flex justify-end md:mt-0">
-              <button class="w-full md:w-auto bg-transparent text-white py-3 px-10 border border-white hover:bg-gray-100 hover:bg-opacity-20 transition-all duration-300">Join</button>
+            <div class="flex-shrink-0 mt-4 md:mt-0">
+              <button
+                  class="w-full md:w-auto bg-transparent text-white py-2 px-6 border border-white hover:bg-gray-100 hover:bg-opacity-20 transition-all duration-300">
+                Join
+              </button>
             </div>
           </div>
         </div>

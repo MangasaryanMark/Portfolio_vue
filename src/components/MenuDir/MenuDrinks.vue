@@ -1,5 +1,5 @@
 <template>
-  <div class="w-8/12 p-4 mx-auto items-center">
+  <div class="w-8/12 p-4 mx-auto text-center items-center">
     <div class="w-full h-4 mx-auto text-center text-black text-4xl">
       <p>Drinks</p>
     </div>
@@ -16,9 +16,8 @@
         <Menu title="Macchiato" description="Espresso 'marked' with a dollop of foam or milk. " price="6.00"/>
         <Menu title="Flat White" description="Espresso with steamed milk, less frothy than a latte." price="8.00"/>
       </div>
-
     </div>
-    <div class="w-full mx-auto">
+    <div class="w-8/12 p-4 mx-auto">
       <div class="w-full h-8 text-2xl text-start align-middle">
         <p>Specialty Drinks</p>
       </div>

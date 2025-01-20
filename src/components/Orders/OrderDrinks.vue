@@ -22,7 +22,7 @@
   </div>
   <div class="w-full mt-5 items-center">
     <div class="w-full">
-      <div class="w-full h-8 mb-7 text-2xl text-start align-middle">
+      <div class="w-full h-8 mb-7 text-3xl text-start align-middle">
         <p>Specialty Drinks</p>
       </div>
       <div class="w-full flex flex-col md:flex-row lg:flex-row justify-between mt-2">
